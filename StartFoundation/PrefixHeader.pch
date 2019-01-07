@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  iShanggang
+//
+//  Created by lijun on 2017/3/31.
+//  Copyright © 2017年 aishanggang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "extobjc.h"
+
+#import "UIColor+Hex.h"
+#import "UIViewExt.h"
+#import "BOAssistor.h"
+#import "Masonry.h"
+#import <CoreLocation/CoreLocation.h>
+#import "BOAssistor.h"
+#import "MJRefresh.h"
+#import "NetWorkEngine.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "BaseViewController.h"
+#import "BOHUDManager.h"
+#import "UserInfoManager.h"
+//#import "ISGNoDataView.h"
+//#import "WebViewController.h"
+//#import "LocationInfoModel.h"
+#import "ISG_Button.h"
+
+#import "ISGUrlListMacro.h"
+#import "CommonMacro.h"
+#import "ISGNotificationMacro.h"
+
+#import "YYModel.h"
+
+// 
+#ifndef __OPTIMIZE__
+#define NSLog(format,...) printf("%s",[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String])
+#else
+#define NSLog(...) {}
+#endif
+
+#endif /* PrefixHeader_pch */
